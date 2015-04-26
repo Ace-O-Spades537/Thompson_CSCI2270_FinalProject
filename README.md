@@ -2,4 +2,7 @@
 
 Project Summary:
 
-This library will be focused on opening and parsing files. It will create a higher level method of dealing with files. It will have functions that will make easy to parse a file and create objects to miniputlate file data. It will be dependent on a few libraries like ifstream and stringstream. 
+This is a library that will keep track of nodes in a graph orientation that will
+later be implemented into a visual context. In this library there will a class
+dedicated to the simple declaration and minipulation of the nodes. The second class
+will control preprogrammed events for the graph. 
