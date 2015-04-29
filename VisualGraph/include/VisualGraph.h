@@ -32,6 +32,7 @@ class VisualGraph
         Node* anchor; //This will create a easy starting point of the graph at position (0,0)
         Node* findNode(int x, int y);
         void sendNodeStatus(string fileName);
+        void printNodeStatus();
 
         //These next methods are to help with manipulation of the graph by easily shifting the pointerNode;
         // One to shift a specified value
@@ -39,12 +40,21 @@ class VisualGraph
         Node* shiftPointerNode(Node* n,int value, string direction);
         Node* shiftPointerNode(Node* n, string direction);
 
+        int getHeight();
+        int getWidth();
+
+        void ChangeAllTo(int val);
+
         Node* createNode(int x,int y);
+
+        void bufferToGraph(int** buffer);
 
         VisualGraph(int width,int height);
         virtual ~VisualGraph();
 
     private:
+        int GraphHeight;
+        int GraphWidth;
         void outOfBound();
 };
 
